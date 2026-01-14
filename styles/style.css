@@ -188,6 +188,19 @@ header {
   grid-template-columns: repeat(5, 1fr);
 }
 
+/* footer section  */
+
+.footer-container {
+  border-radius: 8px;
+  margin-bottom: 240px;
+}
+
+.footer-para {
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 0;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 567px) {
@@ -257,7 +270,13 @@ header {
   .sponsor-img-container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-    gap: 10px;
+    gap: 20px;
+  }
+
+  /* footer section  */
+
+  .footer-container {
+    margin-bottom: 100px;
   }
 }
 
@@ -301,5 +320,11 @@ header {
   .sponsor-img-container img:last-child {
     grid-column: span 2;
     justify-self: center;
+  }
+
+  /* footer section  */
+
+  .footer-container {
+    margin-bottom: 100px;
   }
 }
