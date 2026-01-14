@@ -47,8 +47,31 @@
   border: none;
 }
 
+.section-header {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
 main > section {
   margin-bottom: 130px;
+}
+
+.fact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-cards .card {
+  border: 1px solid rgba(255, 144, 14, 1);
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 242px;
+  height: 242px;
+  padding: 60px 0;
 }
 
 /* header styles */
@@ -62,11 +85,6 @@ header {
   justify-content: space-between;
   padding: 50px 0;
   align-items: center;
-}
-
-.brand {
-  font-size: 2.8rem;
-  font-weight: 700;
 }
 
 .nav-item {
@@ -141,6 +159,35 @@ header {
   max-width: 555px;
 }
 
+/* some fact section styles  */
+
+.section-description {
+  width: 540px;
+  margin: 25px 0 100px 0;
+}
+
+.card-description {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* our sponsor section  */
+.sponsor-header-container {
+  max-width: 545px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sponsor-header-container h2 {
+  margin-bottom: 12px;
+}
+
+.sponsor-img-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 567px) {
@@ -182,6 +229,36 @@ header {
   .teams-content-description {
     width: 85%;
   }
+
+  /* some fact sention 
+   */
+  .fact-center {
+    text-align: center;
+  }
+
+  .section-description {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .fact-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .fact-cards .card {
+    padding: 60px 35px;
+  }
+
+  /* sponsor section  */
+  .sponsor-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
 }
 
 /* for medium size devices */
@@ -193,5 +270,36 @@ header {
 
   .teams-content {
     margin-top: 20px;
+  }
+
+  /* some fact section  */
+
+  .fact-center {
+    text-align: center;
+  }
+
+  .section-description {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .fact-cards {
+    /* padding-left: 120px; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* sponsor section  */
+  .sponsor-img-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .sponsor-img-container img:last-child {
+    grid-column: span 2;
+    justify-self: center;
   }
 }
