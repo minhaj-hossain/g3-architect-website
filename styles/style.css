@@ -328,3 +328,10 @@ header {
     margin-bottom: 100px;
   }
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1962px) {
+  .sponsor-img-container,
+  .fact-cards {
+    place-items: center;
+  }
+}
