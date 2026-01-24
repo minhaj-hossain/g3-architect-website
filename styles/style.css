@@ -243,6 +243,13 @@ header {
     width: 85%;
   }
 
+  /* features section  */
+
+  .image-containers {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* some fact sention 
    */
   .fact-center {
@@ -277,6 +284,13 @@ header {
 
   .footer-container {
     margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 567px) and (max-width: 715px) {
+  .image-containers {
+    display: flex;
+    flex-direction: column;
   }
 }
 
